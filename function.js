@@ -1,0 +1,6 @@
+const booksArray = [
+    {
+        title: '',
+        author: ''
+    }
+]
