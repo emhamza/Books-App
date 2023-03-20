@@ -1,7 +1,6 @@
 const booksArray = [
     {
-        title: '',
-        author: ''
+        title: "",
+        author: "",
     }
-];
-
+]
