@@ -3,4 +3,5 @@ const booksArray = [
         title: '',
         author: ''
     }
-]
+];
+
