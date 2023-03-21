@@ -75,5 +75,3 @@ document.addEventListener('DOMContentLoaded', () => {
   const library = new Library();
   library.init();
 });
-
-// Thank you getComputedStyle,will try to catch up tomorom ,sori for the delay

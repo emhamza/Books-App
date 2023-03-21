@@ -73,7 +73,7 @@ This is pair-programming based website related to the Awsome Book. You can add t
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- The Live Demo link will be availble soon!
+- The Live Demo link will be available soon!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
