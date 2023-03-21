@@ -1,40 +1,11 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Awsome Books</b></h3>
 
 </div>
-
-<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
@@ -49,77 +20,62 @@ After you're finished please remove all the comments and instructions!
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
-
-# 📖 [your_project_name] <a name="about-project"></a>
-
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+# 📖 [My-Portfolio-site] <a name="about-project"></a>
+This is pair-programming based website related to the Awsome Book. You can add the list of your favourite books with their author name. And also you can remove any book by clicking on the remove button and it will give you the functionality of adding and removing the book from your personal Book list anytime when you  desire to do that.
 
 ## 🛠 Built With <a name="built-with"></a>
 
+-HTML5
+-JS
+-DOM Manipulation
+
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
+<details>
+  <summary>Version Control</summary>
+  <ul>
+    <li><a href="https://github.com/">Git Hub</a></li>
+  </ul>
+</details>
+<details>
+  <summary>Visual Studio Code</summary>
+  <ul>
+    <li><a href="https://code.visualstudio.com">Visual Studio Code</a></li>
+  </ul>
+</details>
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://html.com/html5/">HTML5</a></li>
+    <li><a href="https://www.css3.com/">CSS</a></li>
   </ul>
 </details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
-
-<!-- Features -->
-
+ 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Usage of Dynamic desigin]**
+- **[Usage of createElement property]**
+- **[Use-of-HTML5 tools]**
+- **[Follow HTML, JS and CSS best practice]**
+- **[Dynamically designed]**
+- **[DOM Manipulation]**
+- **[Buttons with specific functionality]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://google.com)
-
+- The Live Demo link will be availble soon!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
-
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -127,162 +83,124 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+-Visual Studio Code
+-Github Account
+-Git Bash
+-Node JS
+-Behance Template
 
 ### Setup
 
 Clone this repository to your desired folder:
-
-<!--
-Example commands:
+Use git clone command or downloaded ZIP folder
+Example command:
 
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone: (https://github.com/emhamza/Books-App)
 ```
---->
 
 ### Install
 
-Install this project with:
-
-<!--
-Example command:
+Install this project with: npm Example commands:
 
 ```sh
   cd my-project
-  gem install
+  npm init -y
 ```
---->
+
+```sh
+  npm install --save-dev hint@7.x
+```
+
+```sh
+  npx hint .
+```
+
+```sh
+  npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+```
 
 ### Usage
 
-To run the project, execute the following command:
-
-<!--
+To run the project, execute the following command: npm test
 Example command:
 
 ```sh
-  rails server
+   GitHub Pages Server
 ```
---->
 
 ### Run tests
 
-To run tests, run the following command:
-
-<!--
+To run tests, run the following command: npm test
 Example command:
 
 ```sh
-  bin/rails test test/models/article_test.rb
+  npx stylelint "**/*.{css,scss}" --fix
 ```
---->
+```sh
+  npx eslint "**/*.js" --fix
+```
 
 ### Deployment
 
 You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
+GitHub Pages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 **Umair Hamza**
 
-👤 **Author1**
+- GitHub: [@emhamza](https://github.com/emhamza)
+- Twitter: [@uhamzaz](https://twitter.com/uhamzaz)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/umair-hamza-a8262b261/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Nana Vanina**
 
-👤 **Author2**
+- GitHub: [@vanina123](https://github.com/vanina123)
+- Twitter: [@DufeVanina](https://twitter.com/DufeVanina)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/larissa-vanina-dufe-407a2b25a/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Prince**
+
+- GitHub: [@prius2055](https://github.com/prius2055)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[More section inclusiveness]**
+- [ ] **[Desktop Responsivness]**
+- [ ] **[Animation]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [https://github.com/emhamza/My-portfolio-site](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project then please follow me on Linkedin, Twitter and GitHub. Greetings!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+I would like to thank Microvers for this project!
+I would also like to thank Cindy Shin in Behance who created the original design!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p
