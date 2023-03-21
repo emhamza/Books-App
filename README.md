@@ -157,6 +157,17 @@ GitHub Pages
 - Twitter: [@uhamzaz](https://twitter.com/uhamzaz)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/umair-hamza-a8262b261/)
 
+👤 **Nana Vanina**
+
+- GitHub: [@vanina123](https://github.com/vanina123)
+- Twitter: [@DufeVanina](https://twitter.com/DufeVanina)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/larissa-vanina-dufe-407a2b25a/)
+
+👤 **Prince**
+
+- GitHub: [@prius2055](https://github.com/prius2055)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
