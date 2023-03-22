@@ -33,27 +33,91 @@ nav ul li {
   padding-right: 10px;
 }
 
+.all-books {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.books-data {
+  margin: 10px 5px 5px 5px;
+  border: 2px black solid;
+}
+
+.book-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.book-list p {
+  margin-left: 5px;
+}
+
+.book-list button {
+  margin-right: 5px;
+  border: 2px black solid;
+}
+
+.book-list:nth-child(odd) {
+  background-color: #ccc;
+}
+
+
+.add-book {
+  /* display: none; */
+  text-align: center;
+  margin-top: 50px;
+}
+
+#book-form {
+  margin-top: 20px;
+}
+
+#book-form input {
+  width: 40%;
+  padding: 10px;
+}
+
+#book-form button {
+  text-align: right;
+  padding: 10px 30px;
+}
+
+footer {
+  margin: 10px 5px 5px 5px;
+  border: 2px black solid;
+  text-align: left;
+  padding: 2px 5px;
+}
+
+.contact-form {
+  display: none;
+  text-align: center;
+  margin-top: 50px;
+}
+
+
 
 /*****************************/
-.hero {
+/* .hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.books-list {
+/* .books-list {
   border: 4px solid black;
   padding: 30px;
-}
+} */
 
-.btn-add {
+/* .btn-add {
   background-color: red;
   color: white;
   padding: 10px;
   margin-left: 60%;
   width: 40%;
-}
+} */
 
 /*
 

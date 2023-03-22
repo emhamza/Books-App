@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
-    ></script>
-    <link
+    ></script> -->
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
-    />
+    /> -->
     <title>Awesome Books</title>
   </head>
 
@@ -31,20 +31,16 @@
       </nav>
     </header>
 
-    <section class="hero mt-5">
-      <div
-        class="container d-flex flex-column justify-content-center align-items-center"
-      >
-        <h1 class="main-title text-center">All Awesome Books</h1>
-        <table
-          class="table table-hovered table-striped w-50 table-bordered p-5"
-          id="main-list"
-        ></table>
-      </div>
+    <section class="all-books">
+      <h1>All awesome books</h1>
+      <div class="books-data" id="main-list"></div>
+      <footer>Copyright</footer>
+    </section>
 
-      <h2 class="text-center mt-3 mb-2">Add a new book</h2>
+    <section class="add-book">
+      <h2>Add a new book</h2>
 
-      <form class="my-2" id="book-form">
+      <form id="book-form">
         <input
           class="form-control form-control-lg"
           placeholder="title"
@@ -61,7 +57,23 @@
         /><br /><br />
         <button type="submit" class="btn-add">Add</button>
       </form>
+      <footer>Copyright</footer>
     </section>
+
+    <section class="contact-form">
+      <h1>Contact information</h1>
+      <p>
+        Do have any questions or you want to say "Hello"? <br />You can reach
+        out to us
+      </p>
+      <ul>
+        <li>Our email: Ken@mail.com</li>
+        <li>Our phone: 00044457632</li>
+        <li>Our email: Becking, 22, 24876, Karachi, Pakistan</li>
+      </ul>
+      <footer>Copyright</footer>
+    </section>
+
     <script src="./classes.js"></script>
   </body>
 </html>
