@@ -4,41 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <title>Awesome Books</title>
   </head>
 
   <body>
+    <header>
+      <nav>
+        <a href="#home">Awesome Books</a>
+        <ul class="nav-list">
+          <li><a href="" class="list">List</a></li>
+          <li><a href="" class="add-new">Add new</a></li>
+          <li><a href="" class="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <section class="hero mt-5">
-      <div class="container d-flex flex-column justify-content-center align-items-center">
+      <div
+        class="container d-flex flex-column justify-content-center align-items-center"
+      >
         <h1 class="main-title text-center">All Awesome Books</h1>
-        <table class="table table-hovered table-striped w-50 table-bordered p-5" id="main-list">
-          <!-- <div id="book-list"></div> -->
-        </table>
+        <table
+          class="table table-hovered table-striped w-50 table-bordered p-5"
+          id="main-list"
+        ></table>
       </div>
 
       <h2 class="text-center mt-3 mb-2">Add a new book</h2>
 
-      <form class ="my-2" id="book-form">
+      <form class="my-2" id="book-form">
         <input
-        class ="form-control form-control-lg"
-        placeholder="title"
+          class="form-control form-control-lg"
+          placeholder="title"
           type="text"
           name="title"
           id="title"
-          /><br /><br />
+        /><br /><br />
         <input
-        class ="form-control form-control-lg"
-        placeholder="author"
-        type="text"
-        name="author"
+          class="form-control form-control-lg"
+          placeholder="author"
+          type="text"
+          name="author"
           id="author"
         /><br /><br />
         <button type="submit" class="btn-add">Add</button>
       </form>
-      
     </section>
     <script src="./classes.js"></script>
   </body>
