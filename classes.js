@@ -2,55 +2,38 @@ class Library {
   constructor() {
     this.allBooks = [];
 
-    if (localStorage.getItem("allBooks") !== null) {
-      this.allBooks = JSON.parse(localStorage.getItem("allBooks"));
+    if (localStorage.getItem('allBooks') !== null) {
+      this.allBooks = JSON.parse(localStorage.getItem('allBooks'));
     }
   }
 
   addBook(title, author) {
     const book = { title, author };
     this.allBooks.push(book);
-    localStorage.setItem("allBooks", JSON.stringify(this.allBooks));
+    localStorage.setItem('allBooks', JSON.stringify(this.allBooks));
     this.displayBooks();
   }
 
   removeBook(index) {
     this.allBooks.splice(index, 1);
-    localStorage.setItem("allBooks", JSON.stringify(this.allBooks));
+    localStorage.setItem('allBooks', JSON.stringify(this.allBooks));
     this.displayBooks();
   }
 
   displayBooks() {
-    const listB = document.getElementById("main-list");
-    listB.innerHTML = "";
+    const listB = document.getElementById('main-list');
+    listB.innerHTML = '';
 
     this.allBooks.reverse().forEach((b, index) => {
-      const div = document.createElement("div");
-      div.className = "book-list";
-
-      // const table = document.createElement("tr");
-      // const bookTitle = document.createElement("td");
-      // bookTitle.textContent = b.title;
-      // table.appendChild(bookTitle);
-      const bookTitle = document.createElement("p");
-      bookTitle.textContent = b.title + " " + "by" + " " + b.author;
+      const div = document.createElement('div');
+      div.className = 'book-list';
+      const bookTitle = document.createElement('p');
+      bookTitle.textContent = `${b.title} by ${b.author}`;
       div.appendChild(bookTitle);
-
-      // const bookAuthor = document.createElement("td");
-      // bookAuthor.textContent = b.author;
-      // table.appendChild(bookAuthor);
-
-      // const removeB = document.createElement("td");
-      // const removeBtn = document.createElement("button");
-      // removeBtn.type = "button";
-      // removeBtn.textContent = "Remove";
-      // removeBtn.classList = "float float-end btn btn-sm";
-      // removeBtn.style = "background-color: red;color:white;padding:10px;";
-
-      const removeBtn = document.createElement("button");
-      removeBtn.type = "button";
-      removeBtn.textContent = "Remove";
-      removeBtn.addEventListener("click", () => {
+      const removeBtn = document.createElement('button');
+      removeBtn.type = 'button';
+      removeBtn.textContent = 'Remove';
+      removeBtn.addEventListener('click', () => {
         this.removeBook(index);
       });
       div.appendChild(removeBtn);
@@ -60,13 +43,13 @@ class Library {
   }
 
   initializeForm() {
-    const myForm = document.getElementById("book-form");
+    const myForm = document.getElementById('book-form');
 
-    myForm.addEventListener("submit", (e) => {
+    myForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const title = myForm.title.value;
       const author = myForm.author.value;
-      if (title !== "" && author !== "") {
+      if (title !== '' && author !== '') {
         this.addBook(title, author);
         myForm.reset();
       }
@@ -80,42 +63,42 @@ class Library {
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   const library = new Library();
   library.init();
 });
 
 /* NAVIGATION */
 
-const listLink = document.querySelector(".list");
-const addNewLink = document.querySelector(".add-new");
-const contactLink = document.querySelector(".contact");
+const listLink = document.querySelector('.list');
+const addNewLink = document.querySelector('.add-new');
+const contactLink = document.querySelector('.contact');
 
-const allBooksSection = document.querySelector(".all-books");
-const addBookSection = document.querySelector(".add-book");
-const contactSection = document.querySelector(".contact-form");
+const allBooksSection = document.querySelector('.all-books');
+const addBookSection = document.querySelector('.add-book');
+const contactSection = document.querySelector('.contact-form');
 
-allBooksSection.style.display = "block";
-addBookSection.style.display = "none";
-contactSection.style.display = "none";
+allBooksSection.style.display = 'block';
+addBookSection.style.display = 'none';
+contactSection.style.display = 'none';
 
-listLink.addEventListener("click", (e) => {
+listLink.addEventListener('click', (e) => {
   e.preventDefault();
-  allBooksSection.style.display = "block";
-  addBookSection.style.display = "none";
-  contactSection.style.display = "none";
+  allBooksSection.style.display = 'block';
+  addBookSection.style.display = 'none';
+  contactSection.style.display = 'none';
 });
 
-addNewLink.addEventListener("click", (e) => {
+addNewLink.addEventListener('click', (e) => {
   e.preventDefault();
-  addBookSection.style.display = "block";
-  allBooksSection.style.display = "none";
-  contactSection.style.display = "none";
+  addBookSection.style.display = 'block';
+  allBooksSection.style.display = 'none';
+  contactSection.style.display = 'none';
 });
 
-contactLink.addEventListener("click", (e) => {
+contactLink.addEventListener('click', (e) => {
   e.preventDefault();
-  contactSection.style.display = "block";
-  addBookSection.style.display = "none";
-  allBooksSection.style.display = "none";
+  contactSection.style.display = 'block';
+  addBookSection.style.display = 'none';
+  allBooksSection.style.display = 'none';
 });
