@@ -24,29 +24,21 @@ class Library {
     const listB = document.getElementById('main-list');
     listB.innerHTML = '';
 
-    this.allBooks.forEach((b, index) => {
-      const table = document.createElement('tr');
-      const bookTitle = document.createElement('td');
-      bookTitle.textContent = b.title;
-      table.appendChild(bookTitle);
-
-      const bookAuthor = document.createElement('td');
-      bookAuthor.textContent = b.author;
-      table.appendChild(bookAuthor);
-
-      const removeB = document.createElement('td');
+    this.allBooks.reverse().forEach((b, index) => {
+      const div = document.createElement('div');
+      div.className = 'book-list';
+      const bookTitle = document.createElement('p');
+      bookTitle.textContent = `${b.title} by ${b.author}`;
+      div.appendChild(bookTitle);
       const removeBtn = document.createElement('button');
       removeBtn.type = 'button';
       removeBtn.textContent = 'Remove';
-      removeBtn.classList = 'float float-end btn btn-sm';
-      removeBtn.style = 'background-color: red;color:white;padding:10px;';
       removeBtn.addEventListener('click', () => {
         this.removeBook(index);
       });
-      removeB.appendChild(removeBtn);
-      table.appendChild(removeB);
+      div.appendChild(removeBtn);
 
-      listB.appendChild(table);
+      listB.appendChild(div);
     });
   }
 
@@ -74,4 +66,39 @@ class Library {
 document.addEventListener('DOMContentLoaded', () => {
   const library = new Library();
   library.init();
+});
+
+/* NAVIGATION */
+
+const listLink = document.querySelector('.list');
+const addNewLink = document.querySelector('.add-new');
+const contactLink = document.querySelector('.contact');
+
+const allBooksSection = document.querySelector('.all-books');
+const addBookSection = document.querySelector('.add-book');
+const contactSection = document.querySelector('.contact-form');
+
+allBooksSection.style.display = 'block';
+addBookSection.style.display = 'none';
+contactSection.style.display = 'none';
+
+listLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  allBooksSection.style.display = 'block';
+  addBookSection.style.display = 'none';
+  contactSection.style.display = 'none';
+});
+
+addNewLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  addBookSection.style.display = 'block';
+  allBooksSection.style.display = 'none';
+  contactSection.style.display = 'none';
+});
+
+contactLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  contactSection.style.display = 'block';
+  addBookSection.style.display = 'none';
+  allBooksSection.style.display = 'none';
 });
