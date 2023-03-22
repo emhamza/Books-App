@@ -3,8 +3,12 @@
   padding: 0;
 }
 
+body {
+  height: 100vh;
+  position: relative;
+}
+
 /*NEW STYLES*/
-/* Comment from Hamza */
 
 header nav {
   display: flex;
@@ -62,7 +66,6 @@ nav ul li {
   background-color: #ccc;
 }
 
-
 .add-book {
   /* display: none; */
   text-align: center;
@@ -83,20 +86,26 @@ nav ul li {
   padding: 10px 30px;
 }
 
-footer {
-  margin: 10px 5px 5px 5px;
-  border: 2px black solid;
-  text-align: left;
-  padding: 2px 5px;
-}
-
 .contact-form {
   display: none;
-  text-align: center;
+  text-align: left;
   margin-top: 50px;
 }
 
+.contact-details {
+  width: 80%;
+  margin: 50px auto;
+}
 
+footer {
+  margin: 10px 5px 0 5px;
+  border: 2px black solid;
+  text-align: left;
+  padding: 2px 5px;
+  position: absolute;
+  bottom: 0%;
+  width: 98%;
+}
 
 /*****************************/
 /* .hero {
